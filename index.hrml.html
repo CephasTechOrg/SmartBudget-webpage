@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Budget Pro - Your Personal Finance Companion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <!-- Android Download Modal -->
+    <div class="modal" id="androidModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-icon">
+                <i class="fab fa-android"></i>
+            </div>
+            <h3>Download Smart Budget Pro</h3>
+            <p>Download the APK file directly to your Android device. Make sure to allow installation from unknown sources in your device settings.</p>
+            <div class="modal-buttons">
+                <a href="assets/smart-budget-release.apk" class="btn btn-secondary" id="downloadApkBtn" download>
+                    <i class="fas fa-download"></i> Download APK
+                </a>
+                <button class="btn btn-outline" id="cancelDownload">Cancel</button>
+            </div>
+            <div class="modal-file-info">
+                <span><i class="fas fa-file-archive"></i> 24.8 MB</span>
+                <span><i class="fas fa-shield-alt"></i> Verified Safe</span>
+                <span><i class="fas fa-code-branch"></i> v2.1.4</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="mainHeader">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <span>Smart Budget Pro</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#home" class="btn btn-primary">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-bg-circle circle-1"></div>
+            <div class="hero-bg-circle circle-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text animate-on-scroll">
+                <h1>Take Control of Your <span class="highlight">Financial Future</span></h1>
+                <p>Smart Budget Pro is your personal finance companion designed to bring clarity, control, and confidence to your money. Track, analyze, and optimize your finances with precision and simplicity.</p>
+                <div class="hero-cta">
+                    <a href="#download" class="btn btn-primary btn-lg">
+                        <i class="fas fa-download"></i> Download Now
+                    </a>
+                    <a href="#features" class="btn btn-outline btn-lg">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Thousand Users</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="4.8">0</div>
+                        <div class="stat-label">Star Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Smart Budget Pro App" class="phone-mockup">
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-bolt" style="color: #f59e0b;"></i>
+                    Real-time Updates
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-shield-alt" style="color: #059669;"></i>
+                    Bank-level Security
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Powerful Features for Financial Success</h2>
+                <p>Everything you need to manage your finances effectively, all in one intuitive application.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon track">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Monitor your income, expenses, savings, and balance in real time with automatic categorization and alerts.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon insights">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Smart Insights</h3>
+                    <p>View all your transactions and get personalized insights to optimize your spending and savings habits.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon goals">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Financial Goals</h3>
+                    <p>Set and monitor financial goals that matter to you, from saving for a vacation to planning for retirement.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon graphs">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Interactive Visualizations</h3>
+                    <p>Visualize your full financial life through interactive graphs that make complex data easy to understand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="animate-on-scroll">Download Smart Budget Pro Today</h2>
+                <p class="animate-on-scroll">Join thousands of users who have taken control of their finances with our intuitive and powerful app. Available now on mobile devices.</p>
+                
+                <div class="download-buttons animate-on-scroll">
+                    <a href="assets/smart-budget-release.apk" class="download-btn android" id="androidDownloadBtn" download>
+                        <i class="fab fa-android"></i>
+                        <div class="btn-text">
+                            <span>DOWNLOAD FOR</span>
+                            <span>Android</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="download-btn ios">
+                        <i class="fab fa-apple"></i>
+                        <div class="btn-text">
+                            <span>DOWNLOAD ON THE</span>
+                            <span>App Store</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="download-info animate-on-scroll">
+                    <h4><i class="fas fa-info-circle"></i> Android Installation Note</h4>
+                    <p>For Android users: After downloading the APK file, you may need to enable "Install from Unknown Sources" in your device settings. Our app is completely safe and verified.</p>
+                </div>
+                
+                <div class="coming-soon animate-on-scroll">
+                    <h3>Desktop Version Coming Soon</h3>
+                    <p>We're working hard to bring Smart Budget Pro to your computer. Stay tuned for the Windows and Mac versions!</p>
+                    <div class="coming-soon-card">
+                        <h4><i class="fas fa-desktop"></i> Desktop Version Preview</h4>
+                        <p>Advanced features, multi-account support, and enhanced reporting tools designed for larger screens.</p>
+                        <button class="btn btn-outline" style="margin-top: 15px; color: white; border-color: white;">
+                            <i class="fas fa-bell"></i> Notify Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>What Our Users Say</h2>
+                <p>Discover how Smart Budget Pro has transformed financial management for people just like you.</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-text">
+                        "Smart Budget Pro completely changed how I manage my money. I've saved 30% more since I started using it!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <h4>Sarah Roberts</h4>
+                            <p>Marketing Manager</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-text">
+                        "The insights feature helped me identify unnecessary expenses I didn't even know about. Highly recommended!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <h4>Michael Johnson</h4>
+                            <p>Freelance Developer</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-text">
+                        "Setting and tracking financial goals has never been easier. I paid off my credit card debt 6 months early!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EC</div>
+                        <div class="author-info">
+                            <h4>Emma Chen</h4>
+                            <p>Teacher</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col animate-on-scroll">
+                    <a href="#" class="logo" style="color: white; margin-bottom: 20px; display: inline-block;">
+                        <div class="logo-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <span>Smart Budget Pro</span>
+                    </a>
+                    <p>Your personal finance companion designed to bring clarity, control, and confidence to your money.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Subscribe to our newsletter for updates</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-col animate-on-scroll">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i>Features</a></li>
+                        <li><a href="#download"><i class="fas fa-chevron-right"></i>Download</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Pricing</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Roadmap</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>API</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col animate-on-scroll">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>About Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Careers</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Blog</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Press</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col animate-on-scroll">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Community</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Terms of Service</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright animate-on-scroll">
+                <p>&copy; <span id="currentYear"></span> Smart Budget Pro. All rights reserved.</p>
+                <p style="margin-top: 10px; font-size: 13px;">Android APK Version: 2.1.4 | iOS Version: 2.1.3</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
